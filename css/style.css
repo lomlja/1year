@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: relative;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none; /* Hide slides initially */
+}
+
+.slide.active {
+    display: block; /* Show active slide */
+}
+
+.skip-button {
+    display: none; /* Hide button initially */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skip-button.show {
+    display: block; /* Show button */
+    position: absolute;
+    bottom: 20px; /* Position the button */
+    left: 50%;
+    transform: translateX(-50%);
+}
