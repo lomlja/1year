@@ -7,38 +7,70 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="slideshow-container"></div>
-        <div class="slide active" style="background-image: url('s (1).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="js/1.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="js/2.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="js/3.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <video class="video-slide" autoplay>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+            <div class="slide">
+                <img src="js/4.jpg" alt="Image 4">
+        
+            </div>
+            <div class="slide">
+                <img src="js/5.jpg" alt="Image 5">
+            </div>
+            <div class="slide">
+                <img src="js/6.jpg" alt="Image 6">
+            </div>
+            <div class="slide">
+                <img src="js/7.jpg" alt="Image 7">
+            </div>
+            <div class="slide">
+                <img src="js/8.jpg" alt="Image 8">
+            </div>
+            <div class="slide">
+                <img src="js/9.jpg" alt="Image 9">
+            </div>
+            <div class="slide">
+                <img src="js/10.jpg" alt="Image 10">
+            </div>
+            <div class="slide">
+                <img src="js/11.jpg" alt="Image 11">
+            </div>
+            <div class="slide">
+                <img src="js/12.jpg" alt="Image 12">
+            </div>
+            <div class="slide">
+                <video class="video-slide" autoplay>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+            
+            </div>
         </div>
-        <div class="slide" style="background-image: url('s (2).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
-        <div class="slide" style="background-image: url('s (3).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
-        <div class="slide" style="background-image: url('s (4).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
-        <div class="slide" style="background-image: url('s (5).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
-        <div class="slide" style="background-image: url('s (6).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
-        <div class="slide" style="background-image: url('s (7).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
-        <div class="slide" style="background-image: url('s (8).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
-        <div class="slide" style="background-image: url('s (9).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
-        <div class="slide" style="background-image: url('s (10).jpg');">
-            <button class="skip-button">SKIP INTRO</button>
-        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://samplelib.com/lib/preview/mp3/sample-15s.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
     <script src="js/slide.js"></script>
 </body>
 </html>
